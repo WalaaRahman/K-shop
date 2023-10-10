@@ -1,6 +1,5 @@
-
 .upperNavbar {
-display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-block: 20px;
@@ -28,7 +27,7 @@ display: flex;
 
 .searchContainer {
     position: relative;
-   
+
 }
 
 .searchGlass {
@@ -52,9 +51,11 @@ a {
 a:hover {
     text-decoration: none;
 }
-input[type="text"]:focus{
+
+input[type="text"]:focus {
     outline: none;
 }
+
 .searchInput {
     text-align: right;
     padding-right: 6%;
@@ -68,40 +69,82 @@ input[type="text"]:focus{
 
 
 }
-::-ms-input-placeholder { 
+
+::-ms-input-placeholder {
     color: red;
-  }
+}
 
-  input::placeholder {
+input::placeholder {
     color: var(--primary);
-  }
+}
 
-  .searchGlass{
+.searchGlass {
     color: var(--primary);
 
-  }
+}
 
-  .logoHolder{
+.logoHolder {
     width: 6%;
     margin-inline: 25px;
-  }
+}
 
-  /* Lower Navbar */
-  .navbar-expand-lg {
+/* Lower Navbar */
+.navbar-expand-lg {
     flex-wrap: nowrap !important;
     justify-content: flex-end !important;
 }
-  .darkNavbar{
+
+.darkNavbar {
     background-color: var(--backColor);
-    
+
 }
 
-.navbar > .section{
+.navbar>.section {
     display: flex;
 }
 
 .navbar-brand,
-.nav-item a{
-    
+.nav-item a {
+
     color: var(--primary) !important;
-  }
+}
+
+.nav-item {
+    padding-inline: 20px;
+}
+
+
+.dropdown-toggle::after {
+    display: none !important;
+
+}
+
+.dropdown-toggle::before {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:667px) {
+    .logoHolder {
+        width: 10%;
+    }
+
+    .searchGlass {
+        position: absolute;
+        right: 3%;
+    }
+
+    .searchInput {
+        text-align: right;
+        padding-right: 16%;}
+
+}
