@@ -25,5 +25,6 @@
 }
 
 .section{
-    margin: 20px 50px;
+    margin-inline: 50px;
+    /* margin: 20px 50px; */
 }

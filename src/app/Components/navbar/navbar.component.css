@@ -1,11 +1,9 @@
-.uppderNavContainer {
-    /* margin-inline: 50px; */
-}
 
 .upperNavbar {
 display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-block: 20px;
 }
 
 .navbackgroung {
@@ -70,7 +68,7 @@ input[type="text"]:focus{
 
 
 }
-::-ms-input-placeholder { /* Edge 12-18 */
+::-ms-input-placeholder { 
     color: red;
   }
 
@@ -86,4 +84,24 @@ input[type="text"]:focus{
   .logoHolder{
     width: 6%;
     margin-inline: 25px;
+  }
+
+  /* Lower Navbar */
+  .navbar-expand-lg {
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+}
+  .darkNavbar{
+    background-color: var(--backColor);
+    
+}
+
+.navbar > .section{
+    display: flex;
+}
+
+.navbar-brand,
+.nav-item a{
+    
+    color: var(--primary) !important;
   }
