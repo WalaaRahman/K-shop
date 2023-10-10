@@ -1,10 +1,10 @@
 .uppderNavContainer {
-    margin-inline: 50px;
+    /* margin-inline: 50px; */
 }
 
 .upperNavbar {
-
-    justify-content: center;
+display: flex;
+    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -20,6 +20,12 @@
 .navBtn {
     padding: 5px 12px;
     border-radius: 5px;
+    color: var(--primary) !important;
+    margin-right: 15px;
+    height: 35px;
+    font-size: var(--caption);
+    cursor: pointer;
+
 }
 
 .searchContainer {
@@ -28,11 +34,10 @@
 }
 
 .searchGlass {
-    /* float: right; */
     position: absolute;
-    right: 1%;
-    top: 7px;
+    right: 2%;
     z-index: 2;
+    transform: translateY(50%);
 
 
 }
@@ -54,13 +59,31 @@ input[type="text"]:focus{
 }
 .searchInput {
     text-align: right;
-    padding-right: 3%;
+    padding-right: 6%;
+    padding-block: 10px;
     background-color: var(--backColor) !important;
-  
     border-radius: 5px !important;
-
     border: none !important;
+    color: var(--primary) !important;
+    height: 35px;
+    font-size: var(--caption);
+
+
 }
 ::-ms-input-placeholder { /* Edge 12-18 */
     color: red;
+  }
+
+  input::placeholder {
+    color: var(--primary);
+  }
+
+  .searchGlass{
+    color: var(--primary);
+
+  }
+
+  .logoHolder{
+    width: 6%;
+    margin-inline: 25px;
   }

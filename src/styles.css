@@ -9,6 +9,21 @@
     --starOn:#ffe621;
     --starOff:#eaeaea;
     --backColor:#EEEEF8;
+
+    /* Font sizes */
+
+    --headLine1: 24pt;
+    --headLine2: 18pt;
+    --headLine3: 18pt;
+    --headLine4: 18pt;
+    --headLine5: 16pt;
+    --titleSize: 16pt;
+    --bodyText: 14pt;
+    --caption: 12pt;
    
     
+}
+
+.section{
+    margin: 20px 50px;
 }
