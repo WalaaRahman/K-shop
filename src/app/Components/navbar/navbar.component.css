@@ -1,20 +1,66 @@
-.upperNavbar{
-    display: flex;
+.uppderNavContainer {
+    margin-inline: 50px;
 }
-.navbackgroung{
+
+.upperNavbar {
+
+    justify-content: center;
+    align-items: baseline;
+}
+
+.navbackgroung {
     background-color: #ffffff !important;
-   color: var(--dividerGray) !important;
+    color: var(--dividerGray) !important;
 }
-.navBtn{
-    background-color: var(--backGroundColor);
+
+.navBtn {
+    background-color: var(--backColor);
 }
-.search-btn{
+
+.navBtn {
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.searchContainer {
+    position: relative;
+   
+}
+
+.searchGlass {
+    /* float: right; */
+    position: absolute;
+    right: 1%;
+    top: 7px;
+    z-index: 2;
+
+
+}
+
+.search-btn {
     background-color: #ffffff !important;
     border-radius: 0 5px !important;
 }
-a { 
-    text-decoration: none; 
-} 
-a:hover { 
-    text-decoration: none; 
+
+a {
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: none;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+.searchInput {
+    text-align: right;
+    padding-right: 3%;
+    background-color: var(--backColor) !important;
+  
+    border-radius: 5px !important;
+
+    border: none !important;
+}
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: red;
+  }
