@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --dividerGray: #b7aeca;
+    --primary:#302ca2;
+    --primaryAccent:#23104E;
+    --secondary:#26a37c;
+    --backGroundColor:#f6f6f6;
+    --textBlack:#032326;
+    --starOn:#ffe621;
+    --starOff:#eaeaea;
+    
+}
