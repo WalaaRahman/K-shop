@@ -115,6 +115,7 @@ input::placeholder {
 .nav-item {
     padding-inline: 20px;
     border-right: 2px solid transparent;
+    font-size: var(--headLine5);
 }
 
 .navbar-toggler{

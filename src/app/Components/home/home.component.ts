@@ -8,35 +8,35 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 products:any=[
   {
-    imgSrc:"mobile.png",
+    imgSrc:"../../../assets/images/mobile.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:90,
     rate:3,
     offer:false
   },
   {
-    imgSrc:"mobile2.png",
+    imgSrc:"../../../assets/images/mobile2.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:80,
     rate:2,
     offer:false
   },
   {
-    imgSrc:"tshirt.png",
+    imgSrc:"../../../assets/images/tshirt.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:80,
     rate:3,
     offer:false
   },
   {
-    imgSrc:"shirt.png",
+    imgSrc:"../../../assets/images/shirt.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:80,
     rate:4,
     offer:true
   },
   {
-    imgSrc:"pinkBlouse.png",
+    imgSrc:"../../../assets/images/pinkBlouse.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:80,
     rate:4,

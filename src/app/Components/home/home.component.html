@@ -6,23 +6,25 @@
                 <button class="allProductsBtn">عرض الكل</button>
                 <div class="grayLine"></div>
                 <div class="newArrivalTitle">
-                    <span>وصل حديثًا</span>
+                    <span>وصل حديثا</span>
                 </div>
             </div>
             <!-- Card Starts -->
-            <!-- <div class="card">
+            <div *ngFor="let product of products" class="card">
                 <div class="cardHeader">
                     <span class="badge">Primary</span>
-<span>أضف للمقارنة</span>
+                    <span>أضف للمقارنة</span>
                 </div>
                 <div class="cardImgContainer"></div>
                 <div class="cardBody">
-                    <div class="description"></div>
+                    <div class="description">
+                        <img [src] = "product.imgSrc" alt="">
+                    </div>
                     <div class="rating"></div>
                     <div class="price"></div>
                     <div class="cardFooter"></div>
                 </div>
-            </div> -->
+            </div>
             <!-- Card Ends -->
         </div>
 
