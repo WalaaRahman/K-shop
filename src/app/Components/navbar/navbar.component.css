@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-block: 20px;
+    margin-block: 1.3rem;
 }
 
 .navbackgroung {
@@ -15,16 +15,19 @@
 }
 
 .navBtn {
-    padding: 5px 12px;
+    padding: 0.3em 0.7em;
     border-radius: 5px;
     color: var(--primary) !important;
-    margin-right: 15px;
-    height: 35px;
+    margin-right: 1rem;
+    
     font-size: var(--caption);
     cursor: pointer;
 
 }
 
+.cartBtn{
+    margin-left: 2.5rem;
+}
 .searchContainer {
     position: relative;
 
@@ -70,9 +73,6 @@ input[type="text"]:focus {
 
 }
 
-::-ms-input-placeholder {
-    color: red;
-}
 
 input::placeholder {
     color: var(--primary);
@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 .logoHolder {
-    width: 6%;
+    width: 5%;
     margin-inline: 25px;
 }
 
@@ -96,9 +96,12 @@ input::placeholder {
 
 .darkNavbar {
     background-color: var(--backColor);
+    padding-block: 0;
 
 }
-
+.collapse{
+    justify-content: end;
+}
 .navbar>.section {
     display: flex;
 }
@@ -111,12 +114,14 @@ input::placeholder {
 
 .nav-item {
     padding-inline: 20px;
+    border-right: 2px solid transparent;
 }
 
-
+.navbar-toggler{
+    margin-inline: 1em;
+}
 .dropdown-toggle::after {
     display: none !important;
-
 }
 
 .dropdown-toggle::before {
@@ -130,6 +135,17 @@ input::placeholder {
     border-left: 0.3em solid transparent;
 }
 
+.nav-item:hover,
+
+.active{
+    background-color: var(--dividerGray);
+    border-right: 2px solid gray;
+    font-weight: bold;
+}
+
+.dropdown{
+    padding-inline: 1.7em;
+}
 
 /* Media Query */
 

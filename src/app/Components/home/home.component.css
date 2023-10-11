@@ -1,0 +1,58 @@
+.homeContainer{
+    background-color: var(--backGroundColor);
+    display: flex;
+    padding:0 5rem ;
+}
+
+.newArrivals{
+    width: 74%;
+}
+
+.recentSeen{
+    width:25%
+}
+.newArrivalsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allProductsBtn{
+    background-color:var(--backGroundColor) ;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    color: var(--primary);
+    padding: 0.4em 1.7em;
+    font-size: var(--caption);
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.allProductsBtn:hover{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--backGroundColor);
+}
+
+.grayLine{
+    height: 1px;
+    flex-grow: 1;
+    background-color: var(--dividerGray);
+    margin-inline: 1em;
+}
+
+.newArrivalTitle span{
+    font-size: var(--headLine4);
+    color: var(--textBlack);
+}
+
+/* Card */
+
+.card{
+    width: 25%;
+    background-color: #fff;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
