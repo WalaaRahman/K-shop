@@ -35,13 +35,13 @@ products:any=[
     rate:4,
     offer:true
   },
-  {
-    imgSrc:"../../../assets/images/pinkBlouse.png",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
-    price:80,
-    rate:4,
-    offer:false
-  },
+  // {
+  //   imgSrc:"../../../assets/images/pinkBlouse.png",
+  //   description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
+  //   price:80,
+  //   rate:4,
+  //   offer:false
+  // },
 ]
 
 }

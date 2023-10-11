@@ -10,21 +10,29 @@
                 </div>
             </div>
             <!-- Card Starts -->
-            <div *ngFor="let product of products" class="card">
-                <div class="cardHeader">
-                    <span class="badge">Primary</span>
-                    <span>أضف للمقارنة</span>
-                </div>
-                <div class="cardImgContainer"></div>
-                <div class="cardBody">
-                    <div class="description">
-                        <img [src] = "product.imgSrc" alt="">
+            <div class="cardsContainer">
+                <div *ngFor="let product of products" class="card">
+                    <div class="cardHeader">
+                        <span class="badge">Primary</span>
+                        <span>أضف للمقارنة</span>
                     </div>
-                    <div class="rating"></div>
-                    <div class="price"></div>
-                    <div class="cardFooter"></div>
+                    <div class="cardImgContainer">
+                        <img [src] = "product.imgSrc" alt="">
+    
+                    </div>
+                    <div class="cardBody">
+                        <div class="description">
+                            <h4>
+                                {{product.description.split("-").splice(0,3).join("-")}}
+                            </h4>
+                        </div>
+                        <div class="rating"></div>
+                        <div class="price"></div>
+                        <div class="cardFooter"></div>
+                    </div>
                 </div>
             </div>
+           
             <!-- Card Ends -->
         </div>
 
