@@ -95,7 +95,7 @@ input::placeholder {
 }
 
 .darkNavbar {
-    background-color: var(--backColor);
+    background-color: var(--backColor) !important;
     padding-block: 0;
 
 }
@@ -146,6 +146,12 @@ input::placeholder {
 
 .dropdown{
     padding-inline: 1.7em;
+}
+
+.dropdown-menu{
+    text-align: right;
+    left: -1.5rem;
+    margin-top: 0px;
 }
 
 /* Media Query */
