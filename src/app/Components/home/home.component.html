@@ -35,11 +35,14 @@
                       
 
                         </div>
+                        <div *ngIf="product.previousPrice" class=" previousePrice">
+                            <small class="prevPrice" dir="rtl">{{product.previousPrice}} <small class="arabicCurrency">ج.م</small> <div class="lineThought"></div> </small>
+                        </div>
                         <div class="price">
                             <span dir="rtl">{{product.price}} ج.م </span>
                         </div>
-                        <div class="cardFooter"></div>
                     </div>
+                    <div class="cardFooter"></div>
                 </div>
             </div>
            

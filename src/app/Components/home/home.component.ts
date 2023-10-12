@@ -32,15 +32,37 @@ products:any=[
     imgSrc:"../../../assets/images/shirt.png",
     description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
     price:70,
+    previousPrice:125,
     offer:true
   },
-  // {
-  //   imgSrc:"../../../assets/images/pinkBlouse.png",
-  //   description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
-  //   price:80,
-  //   rate:4,
-  //   offer:false
-  // },
+  {id:5,
+    imgSrc:"../../../assets/images/mobile.png",
+    description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
+    price:90,
+    offer:false
+  },
+  {
+    id:6,
+    imgSrc:"../../../assets/images/mobile2.png",
+    description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
+    price:120,
+    offer:false
+  },
+  {
+    id:7,
+    imgSrc:"../../../assets/images/tshirt.png",
+    description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
+    price:80,
+    offer:false
+  },
+  {
+    id:8,
+    imgSrc:"../../../assets/images/shirt.png",
+    description:"تيشيرت-كم طويل-آرت وير-نسائى-صيفى",
+    price:70,
+    previousPrice:125,
+    offer:true
+  },
 ]
 
 }
