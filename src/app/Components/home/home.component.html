@@ -2,7 +2,7 @@
 
 <section>
     <div class=" homeContainer">
-        <div class="row mx-0 justify-content-end ">
+        <div class="row mx-0 justify-content-center ">
 
             <!-- New Arrivals -->
 
@@ -16,76 +16,6 @@
                 </div>
                 <div *ngIf="products" class="row gy-md-3 justify-content-center ">
                     <div *ngFor="let product of products" class="col-xl-3 col-md-4 col-sm-5">
-                        <!-- <div class="card">
-
-                            <div class="cardHeader ">
-                                <div class="leftBadge">
-                                    <span *ngIf="!product.offer" class=" badge rounded-pill newBadge">
-                                        جديد
-                                    </span>
-                                    <span *ngIf="product.offer" class=" badge rounded-pill offerBadge">
-                                        عرض
-
-                                    </span>
-                                </div>
-                                <div class="rightAddToCompare" (mouseover)="toggleHover(product.id)" (mouseleave)="removeHover()" >
-                                    <span *ngIf="hoverOverProduct === product.id " class="compareLable badge  ">
-                                        أضف للمقارنة
-                                    </span>
-                                     <i class="fa-solid fa-arrow-right-arrow-left compareArrow"></i>
-
-                                </div>
-
-                            </div>
-                            <div class="cardImgContainer">
-                                <img [src]="product.imgSrc" alt="">
-
-                            </div>
-                            <div class="cardBody">
-                                <div class="description">
-                                    <h4>
-                                        {{product.description.split("-").splice(0,3).join("-")}}
-                                    </h4>
-                                </div>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star starOff"></i>
-                                    <i class="fa-solid fa-star starOff"></i>
-                                    <i class="fa-solid fa-star starOff"></i>
-                                    <i class="fa-solid fa-star starOn"></i>
-                                    <i class="fa-solid fa-star starOn"></i>
-
-
-                                </div>
-                                <div *ngIf="product.previousPrice" class=" previousePrice">
-                                    <small class="prevPrice" dir="rtl">{{product.previousPrice}} <small
-                                            class="arabicCurrency">ج.م</small>
-                                        <div class="lineThought"></div>
-                                    </small>
-                                </div>
-                                <div class="price">
-                                    <span dir="rtl">{{product.price}} ج.م </span>
-                                </div>
-                            </div>
-                            <div class="cardFooter">
-                                <div class="row justify-content-evenly align-items-baseline ">
-                                    <div class="col-3 pe-0">
-                                        <div class="rightIcons">
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-9">
-                                        <div class="leftBtn">
-                                            <button class="btn addToCartBtn">أضف للسلة &nbsp;<i
-                                                    class="fa-solid fa-cart-plus"></i> </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div> -->
-
                         <app-product-card [product]="product"></app-product-card>
                     </div>
 
@@ -96,7 +26,7 @@
 
             <!-- Recent Seen -->
 
-            <div class="col-lg-3 col-md-12 px-0"> 
+            <div class="col-lg-3 col-md-12 px-0 recentSeenSection"> 
                 <div class="recentSeenHeader">
                   
                     <div class="recentSeenTitle">
