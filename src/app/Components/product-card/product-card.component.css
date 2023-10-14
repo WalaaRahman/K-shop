@@ -8,12 +8,12 @@
     border-radius: 10px;
     display: flex;
     justify-content: end;
+    cursor:pointer;
+
 
 }
 
-.lastSeen-Card {
-    /* height: 100px; */
-}
+
 
 .cardHeader {
     display: flex;

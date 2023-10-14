@@ -46,35 +46,10 @@ products:any=[
 ]
 
 
-// lastSeenProducts:any=[
-//   {id:1,
-//     imgSrc:"../../../assets/images/pinkBlouse.png",
-//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     price:90,
-//     offer:false
-//   },
-//   {
-//     id:2,
-//     imgSrc:"../../../assets/images/necklace.png",
-//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     price:120,
-//     previousPrice:250,
-//     offer:true
-//   },
-//   {
-//     id:3,
-//     imgSrc:"../../../assets/images/girlsTshirt.png",
-//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-//     price:80,
-//     offer:false
-//   }
-// ]
-// lastSeenProductsIds:any []=[];
 lastSeenProducts:any []=[];
-lastSeenThreeProducts:any []=[];
+lastSeenThreeProducts:any []=[
+  
+];
 
 
  toggleHover (id:any){

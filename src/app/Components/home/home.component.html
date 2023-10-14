@@ -33,12 +33,15 @@
                         <span dir="rtl">منتجات تصفحتها مؤخرا</span>
                     </div>
                 </div>
-                <div class="lastSeenContainer">
+                <div *ngIf="lastSeenThreeProducts" [ngClass]="lastSeenThreeProducts.length < 3 ? 'lastSeenContainerLessThanThree':'lastSeenContainer'">
                     <div *ngFor="let product of lastSeenThreeProducts" class="lastSeenCard">
                        
                         <app-product-card [section]="'lastSeen'" [product]="product"></app-product-card>
                       
                     </div>
+                </div>
+                <div  class="noProductFound" *ngIf="lastSeenThreeProducts.length == 0">
+                    <p>لا يوجد منتجات</p>
                 </div>
             </div>
         </div>
