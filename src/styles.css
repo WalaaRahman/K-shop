@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Xanh+Mono:ital@1&display=swap');
 :root{
     --dividerGray: #b7aeca;
     --primary:#302ca2;
@@ -23,7 +25,9 @@
    
     
 }
-
+body{
+    font-family: 'Cairo', sans-serif;
+}
 .section{
     margin-inline: 50px;
     /* margin: 20px 50px; */

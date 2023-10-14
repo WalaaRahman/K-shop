@@ -8,3 +8,29 @@
     font-size: var(--bodyText);
     opacity: 1;
 }
+
+
+@media screen and (max-width:768px) {
+    .carousel-control-next, 
+    .carousel-control-prev{
+        height: 35px !important;
+        width: 29px !important;
+        top: 46% !important;   
+        
+    }
+      
+  
+
+}
+@media screen and (max-width:375px) {
+    .carousel-control-next, 
+    .carousel-control-prev{
+        height: 25px !important;
+        width: 19px !important;
+        top: 46% !important;   
+        
+    }
+      
+  
+
+}

@@ -1,18 +1,21 @@
-<div class="card">
+<div  [ngClass]="section == 'home' ? 'card' : 'card lastSeen-Card'">
 
     <div [ngClass]="section == 'home' ? 'd-flex flex-column' : 'd-flex flex-row-reverse'">
         <div [ngClass]="section == 'lastSeen' ? 'col-4' : 'col-12'" >
             <app-product-img [product]="product"></app-product-img>
 
         </div>
-        <div  [ngClass]="section == 'lastSeen' ? 'col-8' : 'col-12'">
-            <div class="cardBody">
+        <div  [ngClass]="section == 'lastSeen' ? 'col-8 d-flex flex-column justify-content-between' : 'col-12'">
+            <div [ngClass]="section == 'home' ? 'cardBody' : 'lastSeenCardBody'">
                 <div class="title">
-                    <h4>
+                    <h4 *ngIf="section != 'lastSeen'">
                         {{product.title.split("-").splice(0,3).join("-")}}
                     </h4>
+                    <h4 *ngIf="section === 'lastSeen'">
+                        {{product.title.split("-").splice(0,2).join("-")}}
+                    </h4>
                 </div>
-                <div class="rating">
+                <div *ngIf="section == 'home'" class="rating">
                     <i class="fa-solid fa-star starOff"></i>
                     <i class="fa-solid fa-star starOff"></i>
                     <i class="fa-solid fa-star starOff"></i>
@@ -26,21 +29,22 @@
                         <div class="lineThought"></div>
                     </small>
                 </div>
-                <div class="price">
-                    <span dir="rtl">{{product.price}} ج.م </span>
+                <div [ngClass]="section === 'lastSeen' ? 'price mb-0':'price'">
+                    <span  dir="rtl">{{product.price}} ج.م </span>
                 </div>
             </div>
-            <div class="cardFooter">
+            <div [ngClass]="section == 'home' ? 'cardFooter' : 'cardFooter mb-0'">
                 <div class="row justify-content-evenly align-items-baseline ">
-                    <div class="col-3 pe-0">
-                        <div class="rightIcons">
+                    <div [ngClass]="section == 'home' ? 'col-3 pe-0' : 'col-5'">
+                        <div [ngClass]="section == 'home' ? 'rightIcons':'rightIcons flex-row-reverse'">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-share-nodes"></i>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div [ngClass]="section == 'home' ? 'col-9' : 'col-5'" >
                         <div class="leftBtn">
-                            <button class="btn addToCartBtn">أضف للسلة &nbsp;<i class="fa-solid fa-cart-plus"></i> </button>
+                            <button *ngIf="section === 'home'" class="btn addToCartBtn">أضف للسلة &nbsp;<i class="fa-solid fa-cart-plus"></i> </button>
+                            <a *ngIf="section === 'lastSeen'" class="btn cartIcon"><i class="fa-solid fa-cart-plus"></i> </a>
                         </div>
                     </div>
                 </div>

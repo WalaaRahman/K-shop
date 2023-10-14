@@ -79,8 +79,7 @@
 
 }
 .lastSeenContainer{
-    background-color: teal;
-    height: 357px;
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,6 +89,27 @@
 .lastSeenCard{
     width:100%;
     background-color:#fff;
-    height: 114px;
     border-radius: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .lastSeenContainer{
+       
+        height: 357px;
+     
+    
+    }
+    
+    .lastSeenCard{
+       
+        height: 114px;
+       
+    }
+}
+@media screen and (max-width:768px) {
+
+    .lastSeenCard{
+       
+margin-bottom: 1rem;       
+    }
 }

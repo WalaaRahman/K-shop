@@ -41,69 +41,41 @@ products:any=[
     price:70,
     previousPrice:125,
     offer:true
-  },
-  {id:5,
-    imgSrc:"../../../assets/images/pinkBlouse.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:90,
-    offer:false
-  },
-  {
-    id:6,
-    imgSrc:"../../../assets/images/girlsTshirt.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:120,
-    offer:false
-  },
-  {
-    id:7,
-    imgSrc:"../../../assets/images/necklace.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:80,
-    previousPrice:120,
-    offer:true
-  },
-  {
-    id:8,
-    imgSrc:"../../../assets/images/pinkBlouse.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:70,
-    previousPrice:125,
-    offer:false
-  },
-]
-
-
-lastSeenProducts:any=[
-  {id:1,
-    imgSrc:"../../../assets/images/pinkBlouse.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:90,
-    offer:false
-  },
-  {
-    id:2,
-    imgSrc:"../../../assets/images/necklace.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:120,
-    previousPrice:250,
-    offer:true
-  },
-  {
-    id:3,
-    imgSrc:"../../../assets/images/girlsTshirt.png",
-    title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
-    price:80,
-    offer:false
   }
+  
 ]
+
+
+// lastSeenProducts:any=[
+//   {id:1,
+//     imgSrc:"../../../assets/images/pinkBlouse.png",
+//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     price:90,
+//     offer:false
+//   },
+//   {
+//     id:2,
+//     imgSrc:"../../../assets/images/necklace.png",
+//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     price:120,
+//     previousPrice:250,
+//     offer:true
+//   },
+//   {
+//     id:3,
+//     imgSrc:"../../../assets/images/girlsTshirt.png",
+//     title:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     description:"تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى تيشيرت-كم طويل-آرت وير-نسائى-نسائى",
+//     price:80,
+//     offer:false
+//   }
+// ]
+// lastSeenProductsIds:any []=[];
+lastSeenProducts:any []=[];
+lastSeenThreeProducts:any []=[];
+
 
  toggleHover (id:any){
 this.hoverOverProduct = id;
@@ -112,5 +84,10 @@ removeHover(){
 this.hoverOverProduct = null;
 
 }
+addToLastSeen(id:any){
 
+  this.lastSeenProducts.push(this.products[id-1]);
+  console.log(this.lastSeenProducts);
+  this.lastSeenThreeProducts=this.lastSeenProducts.slice(Math.max(this.lastSeenProducts.length - 3, 0))
+}
 }

@@ -1,4 +1,3 @@
-
 .card {
     /* width: 24%; */
     background-color: #fff;
@@ -9,7 +8,11 @@
     border-radius: 10px;
     display: flex;
     justify-content: end;
-  
+
+}
+
+.lastSeen-Card {
+    /* height: 100px; */
 }
 
 .cardHeader {
@@ -19,7 +22,7 @@
 
 }
 
-.badge{
+.badge {
     position: absolute;
     top: 0.5em;
     left: 1.8em;
@@ -27,22 +30,24 @@
     font-weight: normal;
 
 }
-.newBadge{
+
+.newBadge {
     background-color: var(--primaryAccent);
 }
-.offerBadge{
+
+.offerBadge {
     background-color: var(--secondary);
 }
 
-.rightAddToCompare{
+.rightAddToCompare {
     position: absolute;
     top: 0.5em;
     right: 1.8em;
 }
 
-.compareLable{
+.compareLable {
     background-color: var(--primaryAccent);
-    color: #fff;    
+    color: #fff;
     position: inherit;
     top: -26px;
     left: -66px;
@@ -50,9 +55,10 @@
     border-radius: 4px;
 
 }
-.compareArrow{
-    color:var(--primaryAccent);
-    cursor: url('../../../assets/images/handcursor6.png') , pointer ;
+
+.compareArrow {
+    color: var(--primaryAccent);
+    cursor: url('../../../assets/images/handcursor6.png'), pointer;
 }
 
 .cardImgContainer {
@@ -64,19 +70,23 @@
 }
 
 .cardBody {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 140px;
 }
 
+.lastSeenCardBody {
+    height: unset;
+    padding-top: 0.4em;
+}
 
-
-.title  h4 {
+.title h4 {
     font-size: var(--headLine4);
     text-align: right;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 .rating {
@@ -128,24 +138,64 @@
     width: 25%;
 }
 
-.cardFooter{
-    
+.cardFooter {
+
     margin-bottom: 1em;
 }
-.rightIcons{
+
+.rightIcons {
     display: flex;
     justify-content: space-between;
     color: var(--dividerGray);
 
 }
-.leftBtn{
+
+.leftBtn {
     display: flex;
     justify-content: end;
 }
-.addToCartBtn{
+
+.addToCartBtn {
     font-size: var(--bodyText);
     background-color: var(--primary);
     color: #fff;
     width: 90%;
 }
 
+
+.cartIcon {
+    color: var(--primary);
+}
+
+
+.lastSeen-Card .cardFooter {
+    padding-left: 0.6em;
+}
+
+
+@media  screen and  (max-width: 768px) {
+   .lastSeen-Card{
+    margin-bottom: 0.6rem;
+   }
+.title h4{
+margin-bottom: 1em;}
+   .rightIcons,
+   .cartIcon{
+    font-size: 22px;
+   }
+}
+@media  screen and  (max-width: 667px) {
+    .lineThought {
+    
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+
+    .rightIcons, 
+    .cartIcon {
+        font-size: 18px;
+    }
+}

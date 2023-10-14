@@ -2,7 +2,7 @@
 
 <section>
     <div class=" homeContainer">
-        <div class="row mx-0 justify-content-center ">
+        <div class="row mx-0 justify-content-end justify-content-lg-center ">
 
             <!-- New Arrivals -->
 
@@ -16,7 +16,7 @@
                 </div>
                 <div *ngIf="products" class="row gy-md-3 justify-content-center ">
                     <div *ngFor="let product of products" class="col-xl-3 col-md-4 col-sm-5 mb-4">
-                        <app-product-card [section]="'home'" [product]="product"></app-product-card>
+                        <app-product-card [section]="'home'" [product]="product" (click)="addToLastSeen(product.id)"></app-product-card>
                     </div>
 
                 </div>
@@ -26,7 +26,7 @@
 
             <!-- Last Seen -->
 
-            <div class="col-lg-3 col-md-12 px-0 lastSeenSection">
+            <div class="col-lg-3 col-md-7 col-9 px-0 lastSeenSection me-lg-0 me-2">
                 <div class="lastSeenHeader">
 
                     <div class="lastSeenTitle">
@@ -34,58 +34,8 @@
                     </div>
                 </div>
                 <div class="lastSeenContainer">
-                    <div *ngFor="let product of lastSeenProducts" class="lastSeenCard">
-                        <!-- <div class="row">
-                            <div class="col-8">
-                                 <div class="cardBody">
-                            <div class="title">
-                                <h4>
-                                    {{product.title.split("-").splice(0,3).join("-")}}
-                                </h4>
-                            </div>
-                            <div class="rating">
-                                <i class="fa-solid fa-star starOff"></i>
-                                <i class="fa-solid fa-star starOff"></i>
-                                <i class="fa-solid fa-star starOff"></i>
-                                <i class="fa-solid fa-star starOn"></i>
-                                <i class="fa-solid fa-star starOn"></i>
-                    
-                    
-                            </div>
-                            <div *ngIf="product.previousPrice" class=" previousePrice">
-                                <small class="prevPrice" dir="rtl">{{product.previousPrice}} <small
-                                        class="arabicCurrency">ج.م</small>
-                                    <div class="lineThought"></div>
-                                </small>
-                            </div>
-                            <div class="price">
-                                <span dir="rtl">{{product.price}} ج.م </span>
-                            </div>
-                        </div>
-                        <div class="cardFooter">
-                            <div class="row justify-content-evenly align-items-baseline ">
-                                <div class="col-3 pe-0">
-                                    <div class="rightIcons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="leftBtn">
-                                        <button class="btn addToCartBtn">أضف للسلة &nbsp;<i
-                                                class="fa-solid fa-cart-plus"></i> </button>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                    
-                        </div>
-                            </div>
-                            <div class="col-4">
-                                <app-product-img [product]="product"></app-product-img>
-
-                            </div>
-                        </div> -->
+                    <div *ngFor="let product of lastSeenThreeProducts" class="lastSeenCard">
+                       
                         <app-product-card [section]="'lastSeen'" [product]="product"></app-product-card>
                       
                     </div>
