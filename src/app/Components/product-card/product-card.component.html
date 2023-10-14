@@ -1,34 +1,12 @@
 <div class="card">
 
-    <!-- <div class="cardHeader ">
-        <div class="leftBadge">
-            <span *ngIf="!product.offer" class=" badge rounded-pill newBadge">
-                جديد
-            </span>
-            <span *ngIf="product.offer" class=" badge rounded-pill offerBadge">
-                عرض
 
-            </span>
-        </div>
-        <div class="rightAddToCompare" (mouseover)="toggleHover(product.id)" (mouseleave)="removeHover()" >
-            <span *ngIf="hoverOverProduct === product.id " class="compareLable badge  ">
-                أضف للمقارنة
-            </span>
-             <i class="fa-solid fa-arrow-right-arrow-left compareArrow"></i>
-
-        </div>
-
-    </div>
-    <div class="cardImgContainer">
-        <img [src]="product.imgSrc" alt="">
-
-    </div> -->
     <app-product-img [product]="product"></app-product-img>
     
     <div class="cardBody">
-        <div class="description">
+        <div class="title">
             <h4>
-                {{product.description.split("-").splice(0,3).join("-")}}
+                {{product.title.split("-").splice(0,3).join("-")}}
             </h4>
         </div>
         <div class="rating">
