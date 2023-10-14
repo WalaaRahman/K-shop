@@ -16,7 +16,7 @@
                 </div>
                 <div *ngIf="products" class="row gy-md-3 justify-content-center ">
                     <div *ngFor="let product of products" class="col-xl-3 col-md-4 col-sm-5 mb-4">
-                        <app-product-card [product]="product"></app-product-card>
+                        <app-product-card [section]="'home'" [product]="product"></app-product-card>
                     </div>
 
                 </div>
@@ -86,6 +86,7 @@
 
                             </div>
                         </div> -->
+                        <app-product-card [section]="'lastSeen'" [product]="product"></app-product-card>
                       
                     </div>
                 </div>

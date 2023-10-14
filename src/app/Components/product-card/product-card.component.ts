@@ -7,4 +7,5 @@ import { Component , Input } from '@angular/core';
 })
 export class ProductCardComponent {
 @Input() product:any;
+@Input() section:String = " ";
 }
