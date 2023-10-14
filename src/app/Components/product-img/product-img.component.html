@@ -1,0 +1,30 @@
+
+<div class="cardImgContainer">
+
+    <div class="cardHeader ">
+        <div class="leftBadge">
+            <span *ngIf="!product.offer" class=" badge rounded-pill newBadge">
+                جديد
+        </span>
+        <span *ngIf="product.offer" class=" badge rounded-pill offerBadge">
+            عرض
+
+        </span>
+    </div>
+    <div class="rightAddToCompare" (mouseover)="toggleHover(product.id)" (mouseleave)="removeHover()" >
+        <span *ngIf="hoverOverProduct === product.id " class="compareLable badge  ">
+            أضف للمقارنة
+        </span>
+         <i class="fa-solid fa-arrow-right-arrow-left compareArrow"></i>
+
+    </div>
+
+</div>
+<div class="cardImgContainer">
+    <img [src]="product.imgSrc" alt="">
+
+</div>
+</div>
+
+
+

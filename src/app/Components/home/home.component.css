@@ -16,11 +16,12 @@
     width: 24%
 }
 
-.newArrivalsHeader {
+.newArrivalsHeader,
+.recentSeenHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
 }
 
 .allProductsBtn {
@@ -60,121 +61,15 @@
     flex-wrap: wrap;
 }
 
-.card {
-    /* width: 24%; */
-    background-color: #fff;
-    position: relative;
-    padding-inline: 0.4em;
-    border: none;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-}
 
-.cardHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cardImgContainer {
+/* Recent Seen */
+.recentSeenTitle{
+    font-size:var(--headLine4);
+    text-align: right;
     width: 100%;
-    /* margin-bottom: 2em; */
-}
-
-.cardImgContainer img {
-    width: 100%;
-}
-
-.cardBody {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.description {
-    /* margin-bottom: 1em; */
 
 }
-
-.description h4 {
-    font-size: var(--headLine4);
-    text-align: right;
-    font-weight: normal;
-}
-
-.rating {
-    text-align: right;
-    /* margin-bottom: 1em; */
-
-}
-
-.starOn {
-    color: var(--starOn);
-}
-
-.starOff {
-    color: var(--starOff)
-}
-
-
-.price {
-    text-align: right;
-    margin-bottom: 1em;
-}
-
-.price span {
-    color: var(--primaryAccent);
-    font-size: var(--headLine5);
-    font-weight: bold;
-}
-
-.previousePrice {
-    text-align: right;
-    /* margin-bottom: 1em; */
-}
-
-.prevPrice {
-    color: var(--primary);
-    font-size: var(--headLine2);
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.arabicCurrency {
-    transform: translateY(-8%);
-}
-
-.lineThought {
-    border-bottom: 1px solid var(--primary);
-    position: absolute;
-    height: 5px;
-    width: 28%;
-}
-
-.cardFooter{
-    
-    margin-bottom: 1em;
-}
-.rightIcons{
-    display: flex;
-    justify-content: space-between;
-    color: var(--dividerGray);
-    /* width: 130%; */
-
-}
-.leftBtn{
-    display: flex;
-    justify-content: end;
-}
-.addToCartBtn{
-    font-size: var(--headLine5);
-    background-color: var(--primary);
-    color: #fff;
-    width: 90%;
+.recentSeenContainer{
+    background-color: teal;
+    height: 300px;
 }

@@ -1,0 +1,160 @@
+
+.card {
+    /* width: 24%; */
+    background-color: #fff;
+    position: relative;
+    padding-inline: 0.4em;
+    border: none;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    /* height: 365px; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+.badge{
+    position: absolute;
+    top: 0.5em;
+    left: 1.8em;
+    font-size: var(--bodyText);
+    font-weight: normal;
+
+}
+.newBadge{
+    background-color: var(--primaryAccent);
+}
+.offerBadge{
+    background-color: var(--secondary);
+}
+
+.rightAddToCompare{
+    position: absolute;
+    top: 0.5em;
+    right: 1.8em;
+}
+
+.compareLable{
+    background-color: var(--primaryAccent);
+    color: #fff;    
+    position: inherit;
+    top: -26px;
+    left: -66px;
+    opacity: 0.25;
+    border-radius: 4px;
+
+}
+.compareArrow{
+    color:var(--primaryAccent);
+    /* cursor: pointer; */
+    cursor: url('../../../assets/images/handcursor6.png') , pointer ;
+}
+
+.cardImgContainer {
+    width: 100%;
+    /* margin-bottom: 2em; */
+}
+
+.cardImgContainer img {
+    width: 100%;
+}
+
+.cardBody {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+}
+
+
+
+.description h4 {
+    font-size: var(--headLine4);
+    text-align: right;
+    font-weight: normal;
+}
+
+.rating {
+    text-align: right;
+    /* margin-bottom: 1em; */
+
+}
+
+.starOn {
+    color: var(--starOn);
+}
+
+.starOff {
+    color: var(--starOff)
+}
+
+
+.price {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+.price span {
+    color: var(--primaryAccent);
+    font-size: var(--headLine5);
+    font-weight: bold;
+}
+
+.previousePrice {
+    text-align: right;
+    /* margin-bottom: 1em; */
+}
+
+.prevPrice {
+    color: var(--primary);
+    font-size: var(--headLine2);
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.arabicCurrency {
+    transform: translateY(-8%);
+}
+
+.lineThought {
+    border-bottom: 1px solid var(--primary);
+    position: absolute;
+    height: 5px;
+    width: 25%;
+}
+
+.cardFooter{
+    
+    margin-bottom: 1em;
+}
+.rightIcons{
+    display: flex;
+    justify-content: space-between;
+    color: var(--dividerGray);
+    /* width: 130%; */
+
+}
+.leftBtn{
+    display: flex;
+    justify-content: end;
+}
+.addToCartBtn{
+    font-size: var(--bodyText);
+    background-color: var(--primary);
+    color: #fff;
+    width: 90%;
+}
+
